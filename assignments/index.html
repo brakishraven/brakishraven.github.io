@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Article Page</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<style>
+    body {
+      background-color: #000000;
+      color: black;
+      font-family: 'Inter', sans-serif;
+    }
+    article p {
+      font-size: 1.25rem; /* 20px */
+      line-height: 1.75rem;
+      margin: 1.5rem 0;
+    }
+    a {
+      color: #ff4d5a;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navigation-bar">
+    <ul class="navigation">
+      <li class="navigation__item navigation__item--active"><a href="../index.html">Home</a></li>
+      <li class="navigation__item"><a href="#about">About</a></li>
+      <li class="navigation__item"><a href="assignments/index.html">Projects</a></li>
+      <li class="navigation__item"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Article Container -->
+  <main class="min-h-screen flex items-center justify-center p-4">
+    <article class="max-w-3xl w-full bg-[#FFFFFF] p-8 rounded-2xl shadow-lg border border-gray-700">
+      <header class="mb-6 text-center">
+        <h1 class="text-4xl text-black-800 ">Eras of Formula 1</h1>
+        <p class="text-sm text-gray-400">By Preston Sickle • April 17, 2025</p>
+      </header>
+
+      <section class="prose prose-invert max-w-none">
+        <p>
+          Last year, car manufacturer McLaren became just the third team to win the Formula 1 Constructors Championship since 2010. Marking the end of Red Bull and Mercedes dominance over the last decade and a half. Over that time, 312 Grand Prix races have been run, with Red Bull and Mercedes winning a staggering 80% of them. While such dominance over that long of a time is astoudning, Formula 1 has seen its fair share of dominant teams.
+        </p>
+
+
+        <!--Vis 1 -->
+        <div class="my-6">
+          <iframe title="Formula 1 Constructors Winner Since 2010" aria-label="Pie Chart" id="datawrapper-chart-Hj5Ht" src="https://datawrapper.dwcdn.net/Hj5Ht/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="569" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+          </script>
+        </div>
+
+        <p>
+          Starting in 1958, the Constructors Championship was added to Formula 1, paring with the already established Drivers Championship. Throughout the season points are awarded, with the higher finish, the more points are awarded. At the end of the season, the team with the most points wins the Championship. Of the 170 constructors that have ever raced, only 15 of them have won the coveted crown. Ferrari is far and away the best team in F1 history, winning almost a quarter of all Championships. Mercedes, McLaren and Williams have each won 8 or more Championships, and combined they have won a staggering 65% of all Championships. For context, the New England Patriots, the most succesful team in NFL history, have won 6 Super Bowls, just 10% of all Super Bowls.
+       </p>
+        <p>
+          Formula 1 is one of the most unique sports in the world. Travelling all over the world for 9 months of the year, reaching speeds of over 200 miles per hour, the drivers consistently push the limits of a task done every day by hundreds of millions of people. Perhaps, though, the facet of the sport that makes it so unique is that the drivers are only half of the equation of winning. The engineers who designed the car, mechanics who build the car, and crew who work on it during a race weekend, are all necessary to not only being successful, but running a car at all. If the car has poor cornering speed, reliability issues, and slow straight line speed, there is nothing the best driver in the world could do to bring the car home. That is why, in Formula 1 the teams behind the scene are rewarded just the same as those in the spotlight. Simply put, the constructors are the backbone of the sport. And some of those backbones are better than others.
+        </p>
+
+        <!--Vis 2 -->
+        <div class="image-row">
+          <div class="image-left">
+            <img src="https://github.com/brakishraven/f1-images/blob/main/mcl%204:4.jpg?raw=true" alt="Descriptive Alt Text" class="side-image">
+          </div>
+          <div class="text-right">
+            <h2 class="image-title">McLaren MP4/4</h2>
+            <div class="hover-info">
+              <p class="caption">For nearly 35 years, the 1998 McLaren MP4/4 was the most dominant car to ever race. Losing only 1 race all season, it clinched the Constructors Championship with 5 races left..</p>
+              <p class="credits">Photo by Amalgam Collection</p>
+            </div>
+          </div>
+        </div>
+        <!-- Vis 3-->
+         <div class="image-row">
+          <div class="image-left">
+            <img src="https://raw.githubusercontent.com/brakishraven/f1-images/refs/heads/main/race-winner-max-verstappen-red-1.webp" alt="Descriptive Alt Text" class="side-image">
+          </div>
+          <div class="text-right">
+            <h2 class="image-title">RedBull RB19</h2>
+            <div class="hover-info">
+              <p class="caption">In 2023, Max Verstappen and the RB19 had the most dominant season, with the near perfect season. Winning 21 out of 22 races, and a extraordinary 860 points, doubling thier next closest competitor, Mercedes.</p>
+              <p class="credits">Photo by RedBull Content Pool</p>
+            </div>
+          </div>
+        </div>
+        
+        <p>
+          The McLaren MP4/4 and the RedBull RB19 had the 2 most impressive seasons a manufacturer could have, but Formula 1 is a sport of attrition, race to race and year to year, and there have been teams who have dominated year after year. Their accomplishments are arguably more impressive than the season's dominance of Redbull and McLaren. From the Ferari of the late 70's, designed by the late, great Maruo Forghieri, to the Mercedes of the 2010's, designed by Bob Bell, Paddy Lowe, and James Allison, the sport has seen teams dominate for years at a time. The Ferrari 312T, designed by Forghieri, won 3 consecutive Constructors Championships from 1975-1977. The Mercedes W07, designed by Bell, Lowe and Allison, won 3 consecutive Constructors Championships from 2014-2016. The Mercedes W11, designed by Lowe and Allison, won 7 consecutive Constructors Championships from 2014-2020. The Ferrari F2004, designed by Ross Brawn and Rory Byrne, won 5 consecutive Constructors Championships from 2000-2004. The McLaren MP4/4, designed by Gordon Murray and Steve Nichols, won 2 consecutive Constructors Championships from 1988-1989. 
+        </p>
+        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2:2PACX-1vT7npTJnrWXIx5ePinxl9bB_rXug63Igi0YpxA9U843LOXfYxAJsUCbEafeGa2v8ogRq5Yw6xb5IS63&font=Default&lang=en&initial_zoom=2&start_at_slide=1&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+        
+
+      
+      
+        <p>
+          A lot of these dominant cars coincide with what Formula 1 and its fans call eras. According to 
+          <span class="hover-bio-wrapper">
+            <span class="hover-bio">Rivke Goodman</span>
+            <span class="bio">
+              Writer and Formula 1 fanatic.<br>
+              Contact: <a href="mailto:rivke@example.com">rivke@example.com</a>
+            </span>
+          </span>,
+          these eras are representative of the technology and engineering of the time. Of the cars I have talked about previously, they all coincide with eras. 
+          The <a href="https://en.wikipedia.org/wiki/Ferrari_312T" target="_blank" class="car-link">Ferrari 312T</a> had a new gearbox that greatly improved the cars balance and stability. 
+          The <a href="https://en.wikipedia.org/wiki/Mercedes_W07" target="_blank" class="car-link">Mercedes W07</a> and <a href="https://en.wikipedia.org/wiki/Mercedes-AMG_F1_W11_EQ_Performance" target="_blank" class="car-link">W11</a> included a new DAS(Dual Axis Steering) system that allowed the driver to optimize the grip via a toe angle adjustment. 
+          The <a href="https://en.wikipedia.org/wiki/McLaren_MP4/4" target="_blank" class="car-link">McLaren MP4/4</a> utilized a new Honda engine that was the most powerful engine of its time, which was 50 BHP more than thier competitors. 
+          The <a href="https://en.wikipedia.org/wiki/Red_Bull_RB19" target="_blank" class="car-link">RedBull RB19</a> saw an increase in cornering speed and a decrease in wieght, over its predecessor, the RB18, which itself was a great car. But they also had Max Verstappen.
+        </p>
+        
+        <p> 
+          Each of these cars exploited loopholes in the regulations, and used that to dominate the field. Each of these cars were only dominant for a few years, because new regulations were introduced, that bunched the teams up in terms of performance. Thats why the mechanics, engineers and designers are so important, and why there are 2 FIA Formula 1 World Championships.
+        </p>
+
+        
+
+        
+        
+        
+        
+
+
+
+      </section>
+    </article>
+  </main>
+
+</body>
+</html>
