@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preston Sickle Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script defer src="index.js"></script>
+  <script src="heroCanvas.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  
+  <div id="hero" class="hero" style="position: relative; height: 100vh;">
+    <canvas class="connecting-dots"></canvas>
+    <div class="heading">
+      <div class="heading__line-1">Hello, I'm <span>Preston</span>.</div>
+      <div class="heading__line-2">I'm a student at Syracuse University.</div>
+      <a href="#about" class="heading__link">
+        <div class="heading-cta">
+          Scroll to view
+          
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  
+    <script src="heroCanvas.js"></script>
+  
+  </html>
+
+  <!-- Navigation -->
+  <nav class="navigation-bar">
+    <ul class="navigation">
+      <li class="navigation__item navigation__item--active"><a href="#hero">Home</a></li>
+      <li class="navigation__item"><a href="#about">About</a></li>
+      <li class="navigation__item"><a href="assignments/index.html">Projects</a></li>
+      <li class="navigation__item"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Background Canvas -->
+  <div class="main-bg">
+    <div class="canvas">
+      <canvas class="canvas-2"></canvas>
+    </div>
+  </div>
+
+
+
+  <!-- Main Content -->
+  <main id="about" class="container mx-auto px-4 mt-8">
+    
+    <div class="text-center mb-8">
+      <h1 class="text-4xl font-bold color-changing-text">Preston Sickle</h1>
+      <h3 class="text-xl mt-2">Major in Journalism<br>Minor in Engineering Management</h3>
+      <h3 class="text-xl mt-2">S.I. Newhouse School of Public Communications at Syracuse University</h3>
+    </div>
+
+    <!-- Side-by-side image and intro text -->
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2">
+        <img src="./IMG_0282.jpeg" alt="Preston Sickle" class="rounded mx-auto" style="width: 400px; height: 300px;">
+      </div>
+      <div class="md:w-1/2 mt-4 md:mt-0">
+        <h5 class="text-xl font-semibold">Hello! Welcome to my portfolio.</h5>
+        <p class="mt-2">I am currently a student in Newhouse who is learning data journalism and the basics of coding.</p>
+      </div>
+    </div>
+
+    <!-- Timeline iframe -->
+    <div class="mt-12 text-center">
+      <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=v2:2PACX-1vStk47L4DysJC6AwJ2M4w5HyJ13QUWnoeN1HMBrvso9vh4ew7rceUkKhDr--3z4yMWfbR2_N1MLxy5V&font=Bitter-Raleway&lang=en&initial_zoom=2&height=650' width='50%' height='500' allowfullscreen frameborder='0'></iframe>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer mt-auto">
+    <div class="footer-content">
+      <p>© 2025 Preston Sickle. All rights reserved.</p>
+      <div class="footer-icons">
+        <a href="https://github.com/brakishraven" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="mailto:your-email@example.com"><i class="bi bi-envelope"></i></a>
+        <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="bg.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hero = document.getElementById('hero');
+      const navbar = document.getElementById('mainNavbar');
+  
+      const heroHeight = hero.offsetHeight;
+  
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > heroHeight - 10) {
+          navbar.classList.remove('hidden');
+        } else {
+          navbar.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+  
+
+</body>
+</html>
